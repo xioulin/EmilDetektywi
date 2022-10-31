@@ -8,4 +8,9 @@ CREATE TABLE albums
     sales        FLOAT,
     genre        VARCHAR(50),
     PRIMARY KEY (id)
-); .
+);
+
+USE codeup_test_db;
+ALTER TABLE albums ADD UNIQUE(artist,name);
+SHOW TABLES;
+SELECT *FROM albums;
