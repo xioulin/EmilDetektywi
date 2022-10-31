@@ -22,6 +22,7 @@ VALUES('fer', 'fer@codeup.com',
        (SELECT id FROM roles WHERE name = 'commenter')
       );
 
+Select* from employees;
 # Find all the employees with the same hire date as employee 101010 using a subquery.
 
 
