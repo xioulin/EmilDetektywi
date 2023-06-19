@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<!--<div th:each="item : ${clients}">-->
+<!--    <p th:text="${clients.name}" />-->
+<!--</div>-->
+
+<div th:each="item: ${clients}">
+    <p th:text="${item.getId()}">ID: </p>
+    <p th:text="${item.getMembershipCat()}">Membership Category: </p>
+    <p th:text="${item.getName()}">Name: </p>
+
+
+</div>
+</body>
+</html>

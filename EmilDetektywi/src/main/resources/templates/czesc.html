@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Witaj</title>
+</head>
+<body>
+
+<h1>Oto pierwsza strona</h1>
+
+<label for="goal">Goal Date achieve</label>
+
+<input type="date" id="goal" name="trip-start"
+       value="2022-12-16">
+
+
+
+<!--#<p>Witaj, kolego <span th:text="${nazwisko}"></span> </p>-->
+</body>
+
+<script>
+    var select = '';
+    for (i=1;i<=100;i++){
+        select += '<option val=' + i + '>' + i + '</option>';
+    }
+    $('#some_selector').html(select);
+</script>
+</html>

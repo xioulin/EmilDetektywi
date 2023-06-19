@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+    <form th:action="@{/clients/create}" th:method="post" th:object="${client}">
+        Client:
+        <input th:field="*{name}" />
+        <br />
+        Membership Category:
+        <input th:field="*{membershipCat}" />
+        <br />
+        <input type="submit" />
+    </form>
+</form>
+</body>
+</html>
